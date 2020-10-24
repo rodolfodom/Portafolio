@@ -1,0 +1,87 @@
+/*ajustes a la barra de navegación*/
+
+@media(max-width: 770px){
+    header{
+        .contacto {
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 410px){
+    .secciones {
+        display: flex;
+        flex-direction: column;
+
+        a{
+            padding: 0.3em
+        }
+    }
+}
+
+
+/*ajuestes de la seccion de introduccion de la portada*/
+@media(max-width: 1430px){
+    .portada {
+        section{
+            width: 100%;
+        }
+    }
+}
+
+
+/*ajustes al texto de la portada*/
+@media(max-width: 660px){
+    .portada{
+        section{
+            h1{
+                font-size: 80px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width: 530px){
+    .portada{
+        section{
+            h1{
+                font-size: 55px;
+            }
+        }
+    }
+}
+
+/*ajuestes a la seccion de muestra de proyectos*/
+
+@media(max-width: 1430px){
+    .proyectos {
+        .muestras {
+            display: flex;
+            flex-direction: column;
+            justify-content: unset;
+            .proyecto{
+                width: 100%;
+                height: auto;
+                padding: 0 4em;
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 30px;
+                }
+
+                h3 {
+                    text-transform: capitalize;
+                }
+
+                p {
+                    text-align: justify;
+                }
+
+            
+            }
+        }
+    }
+}

@@ -19,13 +19,14 @@ footer {
 
 .portada {
     width: 100%;
-    height: 80vh;
+    height: auto;
     background-image: $coverImg;
 
     section {
         width: 45%;
         height: 100%;
         background-color: $bgColor2;
+        padding-bottom: 12em;
         
         h1 {
             font-size: 100px;
@@ -66,13 +67,14 @@ footer {
 .proyectos {
     @include sections;
     background-color: $bgColor3;
+    
     .muestras {
         display: flex;
         justify-content: space-around;
         .proyecto{
             width: 27vw;
             img{
-                width: 27vw;
+                width: 100%;
                 height: 350px;
                 border-radius: 30px;
             }
