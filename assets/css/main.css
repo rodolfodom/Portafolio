@@ -64,6 +64,7 @@ footer img {
   width: 45%;
   height: 100%;
   background-color: rgba(57, 142, 200, 0.8);
+  background-size: cover;
   padding-bottom: 12em;
 }
 .portada section h1 {
@@ -138,7 +139,9 @@ footer img {
 }
 .tecnologias .tec {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .tecnologias .tec p {
   display: flex;
@@ -148,6 +151,7 @@ footer img {
   font-size: 10em;
   color: whitesmoke;
   align-content: center;
+  padding: 0.2em;
 }
 .tecnologias .tec p span {
   text-align: center;
@@ -171,14 +175,15 @@ footer img {
   justify-content: space-around;
 }
 .sobreMi section p {
-  width: 45vw;
-  margin-left: 15em;
+  width: 45%;
+  margin-left: 5%;
   font-size: 20px;
   text-align: justify;
 }
 .sobreMi section img {
-  width: 40vh;
-  margin-right: 15em;
+  width: 40%;
+  max-width: 500px;
+  margin: 0 5%;
   border-radius: 20%;
 }
 

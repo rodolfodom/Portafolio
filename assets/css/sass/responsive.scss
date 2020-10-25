@@ -1,3 +1,6 @@
+@import '_variables';
+@import '_mixins';
+
 /*ajustes a la barra de navegación*/
 
 @media(max-width: 770px){
@@ -61,13 +64,13 @@
         .muestras {
             display: flex;
             flex-direction: column;
-            justify-content: unset;
+            align-content: center;
             .proyecto{
                 width: 100%;
                 height: auto;
-                padding: 0 4em;
+                text-align: center;
                 img{
-                    width: 100%;
+                    width: 80%;
                     height: auto;
                     border-radius: 30px;
                 }
@@ -78,6 +81,7 @@
 
                 p {
                     text-align: justify;
+                    padding: 0 10% 3em;
                 }
 
             
@@ -85,3 +89,113 @@
         }
     }
 }
+
+@media(max-width: 500px){
+    .proyectos {
+        h2{
+            font-size: $h2FontSize - 10px; 
+        }
+        .muestras {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            .proyecto{
+                width: 100%;
+                height: auto;
+                text-align: center;
+                img{
+                    width: 90%;
+                    height: auto;
+                    border-radius: 30px;
+                }
+
+                h3 {
+                    text-transform: capitalize;
+                }
+
+                p {
+                    text-align: justify;
+                    padding: 0 5% 3em;
+                }
+
+            
+            }
+        }
+    }
+}
+
+/*ajuestes seccion de tecnologias*/
+
+@media(max-width: 750px){
+
+    .tecnologias {
+        .tec{
+            p{
+                i{
+                    font-size: $iTecFontSize - 3em;
+                }
+            } 
+        }
+    }
+}
+
+
+
+@media(max-width: 500px){
+
+    .tecnologias {
+        h2 {
+            font-size: $h2FontSize - 10px;
+        }
+    }
+}
+
+
+/*ajustes seccion sobre mi*/
+
+@media(max-width: 1350px){
+    .sobreMi{
+        section{
+            flex-direction: column;
+            justify-content: center;
+            p{
+                width: 90%;
+            }
+            img{
+                width: 60%;
+                margin: 5% auto 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 600px){
+    .sobreMi{
+        section{
+            img{
+                width: 80%;
+                margin: 5% auto 0;
+            }
+        }
+    }
+}
+
+/*ajustes al footer*/
+
+@media(max-width: 700px){
+   footer{
+       img{
+           display: none; 
+       }
+   }
+}
+
+@media(max-width: 700px){
+    footer{
+        flex-direction: column;
+        img{
+            display: none; 
+        }
+
+    }
+ }

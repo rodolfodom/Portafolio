@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/*Fonts*/
+/*colors*/
+/*backgound colors*/
+/*images*/
+/*Fonts*/
+/*colors*/
+/*backgound colors*/
+/*images*/
 /*ajustes a la barra de navegación*/
 @media (max-width: 770px) {
   header .contacto {
@@ -39,15 +47,15 @@
   .proyectos .muestras {
     display: flex;
     flex-direction: column;
-    justify-content: unset;
+    align-content: center;
   }
   .proyectos .muestras .proyecto {
     width: 100%;
     height: auto;
-    padding: 0 4em;
+    text-align: center;
   }
   .proyectos .muestras .proyecto img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 30px;
   }
@@ -56,6 +64,79 @@
   }
   .proyectos .muestras .proyecto p {
     text-align: justify;
+    padding: 0 10% 3em;
+  }
+}
+@media (max-width: 500px) {
+  .proyectos h2 {
+    font-size: 50px;
+  }
+  .proyectos .muestras {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .proyectos .muestras .proyecto {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .proyectos .muestras .proyecto img {
+    width: 90%;
+    height: auto;
+    border-radius: 30px;
+  }
+  .proyectos .muestras .proyecto h3 {
+    text-transform: capitalize;
+  }
+  .proyectos .muestras .proyecto p {
+    text-align: justify;
+    padding: 0 5% 3em;
+  }
+}
+/*ajuestes seccion de tecnologias*/
+@media (max-width: 750px) {
+  .tecnologias .tec p i {
+    font-size: 7em;
+  }
+}
+@media (max-width: 500px) {
+  .tecnologias h2 {
+    font-size: 50px;
+  }
+}
+/*ajustes seccion sobre mi*/
+@media (max-width: 1350px) {
+  .sobreMi section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sobreMi section p {
+    width: 90%;
+  }
+  .sobreMi section img {
+    width: 60%;
+    margin: 5% auto 0;
+  }
+}
+@media (max-width: 600px) {
+  .sobreMi section img {
+    width: 80%;
+    margin: 5% auto 0;
+  }
+}
+/*ajustes al footer*/
+@media (max-width: 700px) {
+  footer img {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  footer {
+    flex-direction: column;
+  }
+  footer img {
+    display: none;
   }
 }
 
